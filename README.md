@@ -1,2 +1,5 @@
 # myGallery
-Unity Sandbox
+
+![](./static/thumbnail.png)
+
+Unity Sandbox for practice.
