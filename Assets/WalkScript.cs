@@ -8,12 +8,12 @@ public class WalkScript : MonoBehaviour
 {
     // Unity側のコンソールでSpeedの項目があるので、そこを書き換えて調整
     public float speed = 1.0f;
-    public float rotateSpeed = 50.0f;
+    public float rotateSpeed = 30.0f;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -22,8 +22,8 @@ public class WalkScript : MonoBehaviour
         if (Keyboard.current.wKey.isPressed || Keyboard.current.upArrowKey.isPressed) {
             // 前進
             transform.position += transform.forward * speed * Time.deltaTime;
-        } 
-        
+        }
+
         if ((Keyboard.current.aKey.isPressed || Keyboard.current.leftArrowKey.isPressed) && Keyboard.current.shiftKey.isPressed) {
             // 水平移動(左)
             transform.position -= transform.right * speed * Time.deltaTime;
