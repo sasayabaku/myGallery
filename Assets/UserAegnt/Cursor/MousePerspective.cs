@@ -60,7 +60,7 @@ public class MousePerspective : MonoBehaviour
       }
       else if(Input.GetMouseButton(0))
       {
-        cursorLock = true;
+        cursorLock = false;
       }
 
       if (cursorLock)
